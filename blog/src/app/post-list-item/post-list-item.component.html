@@ -1,0 +1,16 @@
+
+<li [ngClass]="{'list-group-item': true, 'list-group-item-success':LoveIts>0, 'list-group-item-danger':LoveIts<0}"
+    >
+    <div style="display: flex;justify-content: space-between;">
+        <div [ngClass]="{'color':red}">{{title}}</div>
+        <div> {{CreatAt | date : 'short'}}</div>
+    </div>
+    <div>
+        <p>{{Content}}</p>
+    </div>
+    <div>
+        <button class="btn btn-danger" (click)="onDislike()">Don't love it</button>
+        <button class="btn btn-success" style="margin-left: 10px;"
+        (click)="onLike()">Love it</button>
+    </div>
+</li> 
